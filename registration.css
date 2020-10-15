@@ -1,0 +1,256 @@
+    
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body{
+    
+    background-image:url('login_bg.png');
+    background-size:120%;
+}
+
+
+form{ 
+    margin-top: 5%;;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff4d;
+    
+    
+}
+
+.registration{
+    
+    margin-bottom: 50px;
+    width: 1000px;
+   
+    align-items: center;
+    height: 700px;
+    border-radius: 26px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 10px 26px #444;
+}
+
+
+
+.row{
+    margin-top: 40px;
+}
+.column{
+   
+    display: grid;
+    margin-left: 150px;
+    
+}
+
+.left{
+    margin-left: 75px;
+    width: 20%;
+   
+}
+
+.right{
+    margin-left:250px;
+    
+    width:20%;
+    
+}
+
+
+
+
+label{
+    position: relative;
+}
+
+label input{
+    font-family: 'Raleway',sans-serif;
+    font-size: 1rem;
+    color: #521FFF;
+    font-weight: bold;
+    padding: 0.5em 0.8em;
+    background: transparent;
+    min-width: 20rem;
+    border-radius: 0.2rem;
+    border: none;
+    border-bottom: 2px solid rgb(111, 111, 111);
+    transition: border-color 0.2s;
+}
+label input:focus{
+    border-bottom: 2px solid #b8a6f5;
+}
+
+
+label p{
+    
+    font-weight: 600;
+    font-size: 0.99rem;
+    top:50%;
+    transform: translateY(-75%);
+    margin-left: 0.8rem;
+    padding: 0 0 0 0.4rem ;
+    font-family: 'Raleway',sans-serif;
+    width:50%;
+    transition: top 0.2s, font-size 0.1s, color 0.2s ,width .02s;
+
+}
+
+
+label input:focus + p, label input:not(:placeholder-shown) + p{
+    top:10px;
+    width: 32%;
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: rgb(66, 66, 66);
+    border-top: 1px solid #521FFF;
+
+}
+
+.right{
+    margin-top: ;
+}
+
+
+
+label input:not(:focus) +p{
+    
+    color:#444;
+}
+.register{
+    
+    width: 200px;; 
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    background-size: 200%;
+    font-size: .9em;
+    border-radius: 7px;
+    font-family: 'Raleway',sans-serif;
+    text-shadow: black 0px 7px 15px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;    
+
+}
+
+.register:hover{
+
+    background-position:right ;
+    text-shadow: black 0px 7px 10px;
+    box-shadow: #707070  0px 7px 25px;
+    transform:scaleY(1.05);
+    transform:scalex(1.01);
+    transition: .5s;
+}
+@media screen and (max-width: 600px) {
+    body{
+   
+    background-image: url(login_bg.png);
+   background-size:500%;
+   background-position-x: 0%;;
+
+}
+
+form{
+    backdrop-filter: blur(10px);
+    background-color: #b8a6f5;
+
+}
+
+    .registration{
+        backdrop-filter: blur(10px);
+        width: 400px;
+        height: 0;
+      
+        top:100px;
+        border-radius: 26px;
+        position: relative;;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    label input{
+        font-family: 'Raleway',sans-serif;
+        font-size: 1rem;
+        color: #521FFF;
+        padding: 0.5em 0.8em;
+        background: transparent;
+        min-width: 20rem;
+        border-radius: 0.2rem;
+        border: none;
+        border-bottom: 2px solid #7a7a7a56;
+        transition: border-color 0.2s;
+    }
+    label p{
+        background: transparent;
+    }
+
+    .row{
+        
+        
+        
+    }
+    .column{
+      
+        width: 100%;
+        margin-left: 60px;
+        
+    }
+    .column {
+      
+        
+      
+    }
+    .right{
+        margin-top: 65%;
+    }
+
+   
+
+    .register{
+        margin-top:30px;
+        width: 90%;   
+        margin-bottom: 50px;
+        height: 50px;
+        border: none;
+        background: linear-gradient(120deg, #3498db, #8e44ad);
+        font-family:'Raleway', sans-serif;
+        background-size: 200%;
+        font-size: 0.9rem;
+        border-radius: 15px;
+        text-shadow: black 0px 7px 15px;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+
+         
+    }
+
+    .register:hover{
+        transition: .5s;
+        background-position:right ;
+        text-shadow: black 0px 7px 10px;
+        box-shadow: #707070  0px 7px 25px;
+        transform:scaleY(1.05);
+        transform:scalex(1.01);
+    }
+    
+}
