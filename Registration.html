@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hypertext</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+<link href="registration.css" type="text/css" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  
+  display: block;
+  
+}
+
+
+</style>
+</head>
+<body>
+
+<form class="registration">
+<div class="row">
+  <div class=" column left">
+    <label for=""> <input type="text" name="name" id="Name" placeholder=" ">
+      <p>Full Name</p>
+      <br><br><br></label>
+
+    <label for=""> <input type="email" name="name" id="Email" placeholder=" ">
+        <p>Email-id</p>
+        <br><br><br></label>
+        <label for=""> <input type="number" name="name" id="Mob no" placeholder=" ">
+          <p>Mob number</p>
+          <br><br><br></label>
+     <label for=""> <input type="password" name="name" id="Password" placeholder=" ">
+          <p>Password</p>
+          <br><br><br></label>
+     <label for=""> <input type="password" name="name" id="retypePassword" placeholder=" ">
+            <p>Retype password</p>
+            <br><br><br></label>
+   
+   
+
+  
+   
+  </div>
+
+  <div class="column right" >
+
+    <label for=""> <input type="text" name="name" id="Adress1" placeholder=" ">
+      <p>Address line 1</p>
+      <br><br><br></label>
+
+      <label for=""> <input type="text" name="name" id="Adress2" placeholder=" ">
+        <p>Address line 2 </p>
+        <br><br><br></label>
+        <label for=""> <input type="number" name="name" id="Pin" placeholder=" ">
+          <p>Pin code</p>
+          <br><br><br></label>
+          <label for=""> <input type="text" class="city" name="name" id="city" placeholder=" ">
+            <p>City</p>
+            <br><br><br></label>
+          
+              <label for=""> <input type="text" name="name" id="input" placeholder=" ">
+                <p>State</p>
+                <br><br><br></label>
+
+    <input type="submit" class="register" value="Register">
+    
+    
+    
+  </div>
+
+  
+  
+</div>
+</form>
+
+
+
+
+</body>
+</html>
